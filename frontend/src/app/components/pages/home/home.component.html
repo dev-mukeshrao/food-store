@@ -1,0 +1,28 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<div class="row">
+    @for (food of foods; track food.id) {   
+        <div class="col-lg-4 m ">   
+    <div class="card justify-content-center bg-secondary" >  
+        <div class="card-body bg-secondary">
+        <img routerLink="/food/{{food.id}}" [src]="food.imageUrl" class="card-img-top" [alt]="food.name">
+        <div class="card-body bg-secondary"> 
+          <h5 class="card-title">{{food.name}} ❤️</h5>
+          <p class="card-text"></p>
+          <a href="#" routerLink="/food/{{food.id}}" class="btn btn-warning-subtle active">Details</a>
+        </div>
+        </div>
+        <ul class="list-group list-group-flush bg-secondary"> 
+            <li class="list-group-item bg-info-subtle"><b>🔰  </b>{{food.tags}}</li>
+            <li class="list-group-item "><b>💲  </b>{{food.price}}</li>
+            <li class="list-group-item bg-info-subtle"><b>⏱ </b>{{food.cookTime}} min</li>
+            <li class="list-group-item "><b>🌍 </b>{{food.origins}}</li>
+          </ul>
+      </div>    
+      </div>
+    }
+    </div>  
+
+
+
+

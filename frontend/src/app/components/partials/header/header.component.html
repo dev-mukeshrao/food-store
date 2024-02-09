@@ -1,0 +1,35 @@
+
+<nav class="navbar navbar-expand-lg bg-primary-subtle collapsed">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" href="#">FoodStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/home" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/login">Login</a>
+          </li>
+          <li ngbDropdown class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" routerLink="/profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </a>
+            <ul ngbDropdownMenu class="dropdown-menu">
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/usre" href="#">Mukesh Rao</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/order" href="#">Orders</a></li>
+              <li><a ngbDropdownItem class="dropdown-item" routerLink="/logout" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex">
+            <a class="nav-link"  routerLink="/cart-page" href="#">cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

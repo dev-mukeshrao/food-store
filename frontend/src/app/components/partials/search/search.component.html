@@ -1,0 +1,17 @@
+<div class="container-fluid ">
+    <div class="d-flex justify-content-center">
+ 
+    <input #s class="form-control me-2" type="text" placeholder="Delicious....." aria-label="Search" (keyup.enter)="search(s.value)" [value]="searchTerm" />
+    <button class="btn bg-danger-subtle active"  (click)="search(s.value)">Search</button>
+ 
+  </div>
+</div> 
+
+
+
+<!-- <div>
+  <input #s type="text" placeholder="Search Food Mine!"
+   (keyup.enter)="search(s.value)"
+   [value]="searchTerm" />
+  <button (click)="search(s.value)">Search</button>
+</div>  -->
