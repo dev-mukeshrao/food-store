@@ -4,11 +4,13 @@ import { FoodService } from '../../../services/food.service';
 import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 import { SearchComponent } from '../../partials/search/search.component';
 import { TagsComponent } from '../../partials/tags/tags.component';
+import { CartPageComponent } from '../cart-page/cart-page.component';
+import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,SearchComponent,TagsComponent],
+  imports: [RouterOutlet,RouterLink,SearchComponent,TagsComponent,CartPageComponent,NotFoundComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

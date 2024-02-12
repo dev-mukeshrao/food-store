@@ -1,4 +1,10 @@
-@if (food) {
+
+<app-not-found
+[visible]="!food.id"
+notFoundMessage="Not available at this time!"
+resetLinkText="Food Page"
+></app-not-found>
+@if (food.id) {
 <div class="card text-center bg-secondary bg-gradient">
     <div class="card-header bg-success">
       
@@ -7,7 +13,7 @@
         <img routerLink="/food/{{food.id}}" [src]="food.imageUrl" class="card-img-top" style="border-radius: 20%" [alt]="food.name">
       <h5 class="card-title">{{food.name}} ❤️</h5>
       <p class="card-text">💲 {{food.price}}</p>
-      <a href="#" routerLink="/cart-page" class="btn btn-success active">Add to cart 🛒</a>
+      <a href="#" (click)="addToCart()" class="btn btn-success active">Add to cart 🛒</a>
     </div>
     <div class="card-footer text-muted bg-success-subtle">
         <b>🔰  </b>{{food.tags}}   <br>
@@ -15,3 +21,4 @@
     </div>
   </div>
 }
+

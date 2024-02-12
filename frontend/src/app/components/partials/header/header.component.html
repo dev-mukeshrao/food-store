@@ -8,16 +8,16 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/home" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" routerLink="/home" aria-current="page" >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" routerLink="/">Features</a>
+            <a class="nav-link" href="/cart-page" routerLink="/cart-page" >cart</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" routerLink="/login">Login</a>
           </li>
           <li ngbDropdown class="nav-item dropdown">
-            <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" routerLink="/profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle"  routerLink="/profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Profile
             </a>
             <ul ngbDropdownMenu class="dropdown-menu">
@@ -26,9 +26,7 @@
               <li><a ngbDropdownItem class="dropdown-item" routerLink="/logout" href="#">Logout</a></li>
             </ul>
           </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link"  routerLink="/cart-page" href="#">cart</a>
-          </li>
+          
         </ul>
       </div>
     </div>

@@ -3,11 +3,12 @@ import { Food } from '../../../shared/models/Food';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { FoodService } from '../../../services/food.service';
 import { CartService } from '../../../services/cart.service';
+import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 
 @Component({
   selector: 'app-food-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,NotFoundComponent],
   templateUrl: './food-page.component.html',
   styleUrl: './food-page.component.css'
 })

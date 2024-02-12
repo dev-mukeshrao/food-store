@@ -1,5 +1,9 @@
 <app-search></app-search>
 <app-tags></app-tags>
+<app-not-found [visible]= "!foods || !foods.length"
+notFoundMessage="Food You are loooking for is not available!" 
+resetLinkText="Reset Search">
+</app-not-found>
 <div class="row">
     @for (food of foods; track food.id) {   
         <div class="col-lg-4 m ">   

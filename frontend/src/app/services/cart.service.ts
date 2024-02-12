@@ -43,6 +43,7 @@ changeQuantity(foodId: string, quantity: number){
 
   cartItem.quantity = quantity;
   cartItem.price = quantity * cartItem.food.price;
+  this.setCartToLocalStorage();
 }
 
 //reset the cart
