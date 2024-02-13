@@ -13,7 +13,7 @@ resetLinkText="Food Page"
         <img routerLink="/food/{{food.id}}" [src]="food.imageUrl" class="card-img-top" style="border-radius: 20%" [alt]="food.name">
       <h5 class="card-title">{{food.name}} ❤️</h5>
       <p class="card-text">💲 {{food.price}}</p>
-      <a href="#" (click)="addToCart()" class="btn btn-success active">Add to cart 🛒</a>
+      <a routerLink="/cart-page/{{food.id}}" (click)="addToCart()" class="btn btn-success active">Add to cart 🛒</a>
     </div>
     <div class="card-footer text-muted bg-success-subtle">
         <b>🔰  </b>{{food.tags}}   <br>
