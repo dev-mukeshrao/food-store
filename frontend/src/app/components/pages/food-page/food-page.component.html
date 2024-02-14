@@ -1,10 +1,10 @@
 
 <app-not-found
-[visible]="!food.id"
+[visible]="!food"
 notFoundMessage="Not available at this time!"
 resetLinkText="Food Page"
 ></app-not-found>
-@if (food.id) {
+@if (food) {
 <div class="card text-center bg-secondary bg-gradient">
     <div class="card-header bg-success">
       
