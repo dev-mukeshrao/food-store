@@ -1,4 +1,20 @@
 
+export const sample_users: any[] = [
+  {
+    name: "Mukesh Rao",
+    email: "mukesh@gmail.com",
+    password: "12345",
+    address: "Toronto On",
+    isAdmin: true,
+  },
+  {
+    name: "Param Rao",
+    email: "param@gmail.com",
+    password: "12345",
+    address: "Shanghai",
+    isAdmin: false,
+  },
+];
 
 export const sample_tags: any[]= [
   { name: 'All', count: 6 },

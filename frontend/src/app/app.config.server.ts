@@ -8,7 +8,9 @@ const serverConfig: ApplicationConfig = {
   providers: [
     provideServerRendering(),
     HttpClient
-  ]
+  ],
+
+  
 };
 
 export const config = mergeApplicationConfig(appConfig, serverConfig);
